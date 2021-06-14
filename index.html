@@ -15,17 +15,15 @@
 </head>
 <body>
         <header class="header">
-            <div class="logo-box">
-                <img src="./photos/images/logo/Reservia2.png" class="logo" alt="logo reservia">
-            </div>
-            <br/>
-                 <nav>
-                     <ul class="navigation_list">
-                         <li class="navigation_objet1"><a href="#Hébergements">Hébergements</a></li>
-                         <li class="navigation_objet1"><a href="#Activités">Activités</a></li>
-                         <li class="navigation_objet1"><a href="#" id="inscrire">S'inscrire</a></li>
-                     </ul>
-                 </nav>   
+        <nav class="navbar">
+           <img src="./photos/images/logo/Reservia2.png" class="logo" alt="logo reservia">
+            <ul class="navigation_list">
+                <li><a  class="move" href="#Hébergements">Hébergements</a></li>
+                <li><a class="move" href="#Activités">Activités</a></li>
+                <span><li><a href="#" id="inscrire">S'inscrire</a></li></span>
+            </ul>
+            
+        </nav>   
         </header>
 
         
@@ -48,19 +46,19 @@
             <h3>Filtres</h3>
             
                <button class="bouton1 styled">
-                    <i class="btnf fas fa-money-bill-wave"></i>
+                    <i class="btnf fas fa-money-bill-wave iconfa"></i>
                     Economie
                 </button>
                 <button class="bouton1 styled">
-                    <i class="btnf fas fa-child"></i>
+                    <i class="btnf fas fa-child iconfa"></i>
                     Familial
                 </button>
                <button class="bouton1 styled">
-                    <i class="btnf fas fa-heart"></i>
+                    <i class="btnf fas fa-heart iconfa"></i>
                     Romantique
                 </button>
                 <button class="bouton2 styled">
-                    <i class="btnf fas fa-dog"></i>
+                    <i class="btnf fas fa-dog iconfa"></i>
                     Animaux autorisés
                 </button>
             
@@ -70,14 +68,16 @@
             <p></i>Plus de 500 logements sont diponibles dans cette ville</p>
             
         </div>
+       
 
         <div class="centre">           
     
             <table class="bloc1">
-                
+                <tr><td><h2 id="Hébergements">Hébergements à Marseille</h2></td></tr>
                 <tr>
-                <td> <h2 id="Hébergements">Hébergements a Marseille</h2><a href="#"><img src="./photos/images/hebergements/small/auberge_canebiere.jpg" id="bloc1" alt="Auberge la cannebière"/></a></td>
-                <td></br><a  href="#"><img src="./photos/images/hebergements/small/hotel_port.jpg" id="bloc1" alt="hôtel du port"/></a></td>
+                <td><a href="#"><img src="./photos/images/hebergements/small/auberge_canebiere.jpg" id="bloc1" alt="Auberge la cannebière"/></a>
+                </td>
+                <td><a  href="#"><img src="./photos/images/hebergements/small/hotel_port.jpg" id="bloc1" alt="hôtel du port"/></a></td>
                 <td></i><a href="#"><img src="./photos/images/hebergements/small/les_mouettes.jpg" id="bloc1" alt="hôtel les mouettes"/></a></td>
                  </tr>
                  <tr>
@@ -92,9 +92,10 @@
                     
     
         <table class="bloc2">
-            
+            <tr><td> <h2>Les plus populaires</h2><a href="#"></a></td></tr>
+           
             <tr>
-                  <td><h2>les plus populaires</h2><a href="#"><img src="./photos/images/hebergements/small/soleil_matin.jpg" id="bloc2" alt="hôtel Le soleil du matin"/></a>
+                  <td><a href="#"><img src="./photos/images/hebergements/small/soleil_matin.jpg" id="bloc2" alt="hôtel Le soleil du matin"/></a>
                   </td>
             </tr>
             <tr>

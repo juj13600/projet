@@ -14,11 +14,12 @@ h2{
 body{
     font-family:'Raleway', sans-serif;
     margin: 20px;
-
-    
-    
+    max-width: 1400px;    
 }
+a:hover{
+    color: #0065FC;
 
+}
 .header{
     width:100%;
     height: 80px;
@@ -45,27 +46,27 @@ body{
 }
 
 
-.navigation_list{ 
-    width: auto;
-    text-align: left;
-    padding: 0;
-    margin:1;
-    list-style-type: none; /* enleve les points */
-    text-decoration: none; /*enleve le soulignement*/
-    display: flex;  /* mettre en ligne*/
-    justify-content: flex-end;
-}
-nav ul li a {
-    text-decoration: none;
-    padding: 60px 20;
-    background-color: white;
-    color:black;
-}
-nav ul li a:hover{ 
-    cursor: pointer;
-   
-  }
+.navbar{
+    color:#0065FC;
+    display: flex; /*pour mettre les elements cote a cote*/
+    justify-content: space-between;/* placer nos element sur l'axe principal dans ce cas un a gauche l'autre a droite*/
+    padding: 16px;
 
+
+}
+.navbar ul{
+    display: flex;
+    align-items: baseline; /* centrer sur l'axe secondaire*/
+    list-style-type: none; /*enleve les poins*/
+}
+.navbar ul li a{
+    color: black;
+    padding: 12px; /*padding entre les liens*/
+}
+.navbar ul li a:hover{
+    color: blue;
+    border-top:1px solid#0065FC;
+}
 #inscrire{
     color: blue;
     position: static;
@@ -143,9 +144,10 @@ button{
     background-color: #DEEBFF;/*fond couleur celue*/
     border-radius: 25px; /* l'arrondie de la celule*/
     position: absolute;
-    left: -10;
+    left: 0;
     
 }
+
 .info{
     display: flex;
     flex-direction: row;
@@ -160,7 +162,6 @@ button{
 
 .bloc1{
     width: 60%;
-    height: 350px;
     background-color: #F2F2F2;
     border-radius: 2rem;
     padding:20px;
@@ -177,20 +178,30 @@ button{
     
 }
 .centre{
+    
     display:flex
+    
     
 }
 
+.bloc1{
+    margin-right: 3px;
+    padding-bottom: 150px;
+}
+.bloc2{
+    margin-left: 3px;
+}
     
 #bloc1{
     
     cursor: pointer;
     border-radius: 2rem;
     width:200px;
+    margin: 15px;
     height: 150px;
-    margin-right: 10px;
+    box-shadow: 0px 2px 3px 0px;
     
-    
+      
 
 
 }
@@ -200,7 +211,8 @@ button{
     border-radius: 2rem;
     width:200px;
     height: 150px;
-    margin-left: 10px;
+    margin: 15px;
+    padding-bottom: 20px;
     
     
     
@@ -236,3 +248,10 @@ footer{
 .Assistance{
     margin: 0px 20px 0px 20px;
 }
+#footer .fin{
+    text-decoration: none;
+    color: black;
+}
+/* .iconfa{
+    background: black;
+} */
