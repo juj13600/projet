@@ -193,7 +193,7 @@ button{
     box-shadow: 4px 2px 2px 2px gray;
      
 }
-#bloc3{
+.toto{
     cursor: pointer;
     border-radius: 2rem;
     width:250px;
@@ -201,15 +201,15 @@ button{
     margin: auto;
 
 }
-.bloc3{
-    height: 450px;
-    width: 60%;
-    background-color: #F2F2F2;
+.toto1{
+    cursor: pointer;
     border-radius: 2rem;
-    padding:20px;
-    margin-right: 3px;
-    padding-bottom: 150px; }
+    width:250px;
+    height: 400px;
+    margin: auto;
 
+}
+   
 footer{
     background-color: #F2F2F2;
     display: flex;
@@ -232,6 +232,7 @@ footer{
     text-decoration: none;
     color: black;
 }
+
 
 /* .iconfa{
     background: black;
