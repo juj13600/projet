@@ -13,36 +13,20 @@ h2{
 }
 body{
     font-family:'Raleway', sans-serif;
-    margin: 20px;
     max-width: 1400px;    
 }
 a:hover{
     color: #0065FC;
 
 }
-.header{
-    width:100%;
-    height: 80px;
-    margin: 10px;
-    border-top: 2px;
-    
-
-
-    
-}
 
 /*Les couleurs de la charte sont le bleu #0065FC, et sa version plus
  claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.*/
 
-.logo-box{
-    float: left;
-    position: absolute;
-    top: 2rem;
-    left: 2rem;
-}
+
 .logo{
-    margin: 0; padding: 0; /*marge ext et int */
-    height: 2rem;   /*taille logo*/
+    width: 4rem;
+    height: 3rem;
 }
 
 
@@ -50,7 +34,6 @@ a:hover{
     color:#0065FC;
     display: flex; /*pour mettre les elements cote a cote*/
     justify-content: space-between;/* placer nos element sur l'axe principal dans ce cas un a gauche l'autre a droite*/
-    padding: 16px;
 
 
 }
@@ -69,7 +52,7 @@ a:hover{
 }
 #inscrire{
     color: blue;
-    position: static;
+    position: relative;
 }
 
 
@@ -106,6 +89,9 @@ a:hover{
     color: white;
     
 }
+.btn:hover{
+    background: #DEEBFF ;
+ }
 .filtre{
     display: flex;
     align-items: center;
@@ -114,48 +100,51 @@ a:hover{
 button{
     cursor: pointer;
 }
-.bouton1{
-    height:50px;
-    width: 150px;
-}
-.bouton2{
-    height: 50px;
-    width: 250px;
-}
+
+
 .styled{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 0 2px 0 15px;
+    align-items: center; /* align-items: center; aligne le text */
+    justify-content: space-around;
+    margin-left: 16px;
     border: 2px solid #f2f2f2;
-    padding-left: 40px;
     border-radius: 25px;
-    font-weight: 600;
+    font-weight: bold;
     background-color: white;
+    height:35px;
+    width: 183px;
 }
 .btnf{
     
-    font-size: 30px; /* taille de l'icone*/
+    font-size: 23px; /* taille de l'icone*/
     color: #0065FC; /*couleur de l'incone*/
-    justify-content: center;
-    width: 45px; /* largeur de la celule*/
-    height: 45px;/* hauteur de la celule*/
+    width: 35px; /* largeur de la celule*/
+    height: 35px;/* hauteur de la celule*/
     background-color: #DEEBFF;/*fond couleur celue*/
     border-radius: 25px; /* l'arrondie de la celule*/
-    position: absolute;
-    left: 0;
+    margin-left:-37px;
     
+}
+.bouton2{
+    margin-left: 30px;
+}
+.fa-dog{
+    text-align: justify;
 }
 
 .info{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center
+    align-items: center;
+    margin-left: 10px;
 }
 .inf{
-    background-color: white;
+    
+    font-size: 25px;
+    color: #DEEBFF;
+    margin-right: 10px;
+    
 }
 /*Les couleurs de la charte sont le bleu #0065FC, et sa version plus
  claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.*/
@@ -165,59 +154,44 @@ button{
     background-color: #F2F2F2;
     border-radius: 2rem;
     padding:20px;
+    margin-right: 3px;
+    padding-bottom: 150px;
    
     
     
 }
 .bloc2{
-  width: auto;
-    height: 350px;
     background-color:#F2F2F2 ;
     border-radius: 2rem; 
-    padding-top: 20px; 
+    padding-top: 20px;
+    margin-left: 3px; 
     
 }
 .centre{
-    
-    display:flex
-    
-    
+    display:flex   
 }
 
-.bloc1{
-    margin-right: 3px;
-    padding-bottom: 150px;
-}
-.bloc2{
-    margin-left: 3px;
-}
-    
-#bloc1{
-    
+.imgbloc1{
+    position: relative;
     cursor: pointer;
     border-radius: 2rem;
     width:200px;
     margin: 15px;
     height: 150px;
-    box-shadow: 0px 2px 3px 0px;
-    
-      
-
-
+    box-shadow: 4px 2px 2px 2px gray;
+}
+.d{
+    font-size: 16px;
 }
 
 #bloc2{
     cursor: pointer;
     border-radius: 2rem;
-    width:200px;
+    width:  260px;
     height: 150px;
     margin: 15px;
-    padding-bottom: 20px;
-    
-    
-    
-
-
+    box-shadow: 4px 2px 2px 2px gray;
+     
 }
 #bloc3{
     cursor: pointer;
@@ -252,6 +226,28 @@ footer{
     text-decoration: none;
     color: black;
 }
+
 /* .iconfa{
     background: black;
 } */
+
+/* media queries */
+
+@media all and (max-width: 350px)
+{
+    .body
+    {
+        width: auto;
+    }
+    nav
+    {
+        width: auto;
+        text-align: left;
+    }
+    
+    nav ul
+    {
+        flex-direction: row;
+    }
+
+}
