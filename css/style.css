@@ -7,7 +7,7 @@
 
 body{
     font-family:'Raleway', sans-serif;
-    max-width: 1400px;    
+    max-width: 1440px;    
 }
 a:hover{
     color: #0065FC;
@@ -149,7 +149,8 @@ section{
     
 }
 .contenant1{
-    width: 900px;
+    width: 880px;
+    height: 630px;
     margin: 5px ;
     display: flex;
     flex-direction: row;
@@ -158,12 +159,16 @@ section{
     border-radius: 2rem;
 
 }
+.titre_hebergement{
+  height: 30px;
+
+}
 .contenant1 .box{
     position: relative;
-    width: 270px;
-    height:180px;
+    width: 248px;
+    height:196px;
     background: coral;
-    margin: 5px;
+    margin: 0px 0 0 0;
     box-sizing: border-box;
     display: inline-block;
     border-radius: 2rem ;
@@ -177,18 +182,11 @@ section{
     border-radius: 2rem;
     margin: 2px solid white;
 }
-.anina{
+.size1{
     width: 270px;
     height: 180px;
 }
-.panier{
-    width: 270px;
-    height: 180px;
-}
-.mer{
-    width: 270px;
-    height: 180px;
-}
+
 .contenant1 .box .details{
     position: absolute;
     top: 55%;
@@ -201,6 +199,58 @@ section{
     
 }
 .contenant1 .box .details .blabla{
+    position: absolute;
+    top: 0%;
+    left: 2%;
+    color: black;
+    font-size: 10px;
+}
+.contenant2{
+    width: 280px;
+    margin: 5px ;
+    display: flex;
+    flex-direction: column;
+    background: #F2F2F2;
+    border-radius: 2rem;
+    padding-block-start: 62px;
+    padding-block-end: 23px;
+
+}
+.contenant2 .box2{
+    position: relative;
+    width: 341px;
+    height:146px;
+    background: coral;
+    margin: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 2rem ;
+
+}
+.contenant2 .box2 .imgbox2{
+    position:relative
+}
+.contenant2 .box2 .imgbox2 img{
+    max-width: 100%;
+    border-radius: 2rem;
+    margin: 2px solid white;
+}
+.size2{
+    width: 270px;
+    height: 130px;
+}
+.contenant2 .box2 .details{
+    position: absolute;
+    top: 55%;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: white;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+}
+.contenant2 .box2 .details .blabla2{
     position: absolute;
     top: 0%;
     left: 2%;
