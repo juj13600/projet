@@ -7,7 +7,7 @@
 
 body{
     font-family:'Raleway', sans-serif;
-    max-width: 1440px;    
+    
 }
 a:hover{
     color: #0065FC;
@@ -23,7 +23,9 @@ a:hover{
     height: 3rem;
 }
 
-
+main{
+    display: flex;
+}
 .navbar{
     color:#0065FC;
     display: flex; /*pour mettre les elements cote a cote*/
@@ -146,6 +148,7 @@ button{
 section{
     margin: 0;
     padding: 0;
+    display: flex;
     
 }
 .contenant1{
