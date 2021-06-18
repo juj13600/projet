@@ -3,7 +3,9 @@
 
 
 
-
+h1{
+    font-size: 16px;
+}
 
 body{
     font-family:'Raleway', sans-serif;
@@ -28,7 +30,7 @@ main{
 }
 .navbar{
     margin-left: 11%;
-    margin-right: 11%;
+    margin-right: 5%;
     color:#0065FC;
     display: flex; /*pour mettre les elements cote a cote*/
     justify-content: space-between;/* placer nos element sur l'axe principal dans ce cas un a gauche l'autre a droite*/
@@ -68,8 +70,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 8px 0px 30px 20px;
-    margin-left: 11px;
 }
 .icon{
     background-color: #F2F2F2;
@@ -114,8 +114,8 @@ button{
     border-radius: 25px;
     font-weight: bold;
     background-color: white;
-    height:35px;
-    width: 183px;
+    height:53px;
+    width: 146px;
 }
 .btnf{
     
@@ -132,7 +132,11 @@ button{
     margin-left: 30px;
 }
 .fa-dog{
-    text-align: justify;
+    text-align: center;
+}
+
+.fa-money-bill-wave{
+    text-align: center;
 }
 
 .info{
@@ -140,7 +144,7 @@ button{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-left: 11%;
+    margin-left:11%;
 }
 .inf{
     
@@ -155,8 +159,8 @@ button{
 section{
    
     display: flex;
-    margin-left: 10%;
-    margin-right: 10%;  
+    margin-left: 11%;
+     
     
 }
 .contenant1{
@@ -175,7 +179,7 @@ section{
 .contenant1 .box1{
     position: relative;
     width: 210px;
-    height:160px;
+    height:180px;
     background: coral;
     margin:7px;
     box-sizing: border-box;
@@ -231,7 +235,7 @@ section{
 .contenant2 .box2{
     position: relative;
     width: 257px;
-    height:153px;
+    height:130px;
     background: coral;
     margin: 5px;
     box-sizing: border-box;
@@ -253,23 +257,28 @@ section{
 }
 .contenant2 .box2 .details{
     position: absolute;
-    top: 55%;
-    left: 0px;
+    top: 0;
+    left:50%;
     bottom: 0px;
     right: 0px;
     background: white;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
     
 }
 .contenant2 .box2 .details .blabla2{
     position: absolute;
     top: 0%;
-    left: 2%;
-    color: blue;
+    left: 5%;
+    color: black;
     font-size: 10px;
 }
-
+.active{
+    color: #0065FC;
+}
+.desactive{
+    color:#F2F2F2;
+}
 
 .toto{
     cursor: pointer;
@@ -295,7 +304,8 @@ section{
     align-items: center;
     height: 130px;
     width: auto;
-    list-style-type: none;    
+    list-style-type:none; 
+    padding-left: 10%;  
 }
 .apropos{
     margin: 0px 20px 0px 20px;
@@ -315,6 +325,9 @@ section{
     padding-top: 20px;
     margin-left: 11%; 
     
+}
+#activités{
+    margin-left: 11%;
 }
 
 
