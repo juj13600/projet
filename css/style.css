@@ -101,8 +101,9 @@ body{
     background-color: #DEEBFF;
     color: #0065FC;
     text-align: center;
-    height: 28px;
-    width: 28px;
+    padding: 10px;
+    border-radius: inherit;
+    margin-left: -8px;
 }
 
 
