@@ -303,21 +303,21 @@ button{
 .end{
     background-color: #F2F2F2;
     display: flex;
-    align-content:center;
-    align-items: center;
-    height: 130px;
-    width: auto;
-    list-style-type:none; 
-    padding-left: 10%;  
+    justify-content: space-around; 
 }
 .apropos{
-    margin: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+
 }
 .nos_hebergements{
-    margin: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+
 }
 .Assistance{
-    margin: 0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
 }
 .end .fin{
     text-decoration: none;
