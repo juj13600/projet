@@ -155,12 +155,13 @@ button{
 }
 /*Les couleurs de la charte sont le bleu #0065FC, et sa version plus
  claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.*/
+ 
 
-section{
+.parti1{
    
     display: flex;
     margin-left: 11%;
-     
+    
     
 }
 .contenant1{
@@ -175,14 +176,14 @@ section{
 }
 .titre1{
     width: inherit;
+    font-size: 15px;
+    margin-left: 22px;
 }
 .contenant1 .box1{
     position: relative;
     width: 210px;
     height:180px;
-    background: coral;
     margin:7px;
-    box-sizing: border-box;
     display: inline-block;
     border-radius: 2rem ;
 
@@ -193,7 +194,8 @@ section{
 .contenant1 .box1 .imgbox img{
     width: 100%;
     border-radius: 2rem;
-    margin: 2px solid white;
+    border: 5px solid white;
+     box-shadow: 4px 5px 11px gray;
 }
 .size1{
     width: 270px;
@@ -202,18 +204,18 @@ section{
 
 .contenant1 .box1 .details{
     position: absolute;
-    top: 55%;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
+    top: 50%;
+    left: 5px;
+    bottom: -5px;
+    right: -5px;
     background: white;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     
 }
+
 .titre2{
-    width: 100%;
-    display: inline-block;
+    font-size: 15px;
 }
 .contenant1 .box1 .details .blabla{
     position: absolute;
@@ -250,6 +252,7 @@ section{
     width: 100%;
     border-radius: 2rem;
     margin: 2px solid white;
+    box-shadow: 4px 5px 11px gray;
 }
 .size2{
     width: 270px;
@@ -320,15 +323,75 @@ section{
     text-decoration: none;
     color: black;
 }
-.bloc3{
-    border-radius: 2rem; 
-    padding-top: 20px;
-    margin-left: 11%; 
-    
-}
-#activités{
+
+.parti2{
+   
+    display: flex;
     margin-left: 11%;
+     
 }
+
+.xsize{
+    width: 230px;
+    height:340px;
+    border-radius: 2rem;
+    box-shadow: 4px 5px 11px gray;
+    margin-right: 29px;
+}
+.smsize{
+    width: 230px;
+    height:170px;
+    border-radius: 2rem;
+    box-shadow: 4px 5px 11px gray;
+  
+}
+
+
+.bloc4{
+    width: 500px;
+    height: 388px;
+    margin: 7px ;
+    border-radius: 2rem;
+    display: flex;
+ }
+ .activite2{
+ 
+    position: relative;
+ 
+ }
+ .titi .blabla3{
+    background: white;
+    z-index: 2;
+    position: absolute;
+    text-align: inherit;
+    left: 0;
+    right: 0;
+    bottom:0;
+    top: 75%;
+    color: black;
+    width: 100%;
+    font-size: 11px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+ }
+ .tutu .blabla3{
+    background:white;
+    position: absolute;
+    text-align: left;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 85%;
+    color:black;
+    width: 89%;
+    font-size: 11px;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+
+ }
+ .titre3{
+     width: inherit;
+ }
 
 
 /* .iconfa{
