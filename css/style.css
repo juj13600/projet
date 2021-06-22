@@ -9,13 +9,8 @@ h1{
 
 body{
     font-family:'Raleway', sans-serif;
-    width: 100%;
+    max-width: 1440px;
 }
-a:hover{
-    color: #0065FC;
-
-}
-
 /*Les couleurs de la charte sont le bleu #0065FC, et sa version plus
  claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.*/
 
@@ -25,17 +20,13 @@ a:hover{
     height: 3rem;
 }
 
-main{
-    display: flex;
-}
+
 .navbar{
     margin-left: 11%;
-    margin-right: 5%;
+    margin-right: 16%;
     color:#0065FC;
     display: flex; /*pour mettre les elements cote a cote*/
     justify-content: space-between;/* placer nos element sur l'axe principal dans ce cas un a gauche l'autre a droite*/
-
-
 }
 .navbar ul{
     display: flex;
@@ -73,8 +64,7 @@ main{
 }
 .icon{
     background-color: #F2F2F2;
-    border-top-left-radius: 2rem;
-    border-bottom-left-radius: 2rem;
+    border-radius: 10px 0 0 10px;
     padding:9.5px;
 
 }
@@ -84,8 +74,7 @@ main{
 }
 .btn{
     background-color:#0065FC;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    border-radius: 0 10px 10px 0;
     padding: 10px;
     border:none;
     color: white;
@@ -96,48 +85,27 @@ main{
  }
 .filtre{
     display: flex;
-    align-items: center;
     margin: 10px;
     margin-left: 11%;
+    align-items: center;
 }
-button{
-    cursor: pointer;
-}
-
-
-.styled{
-    display: flex;
-    align-items: center; /* align-items: center; aligne le text */
-    justify-content: space-around;
-    margin-left: 16px;
-    border: 2px solid #f2f2f2;
-    border-radius: 25px;
-    font-weight: bold;
-    background-color: white;
-    height:53px;
-    width: 146px;
+.bouton1{
+    align-items: center;
+    border-radius: 2rem;
+    margin: 10px;
+    font-size: 18px;
+    background: transparent;
+    border: 2px solid #F2F2F2;
 }
 .btnf{
-    
-    font-size: 23px; /* taille de l'icone*/
-    color: #0065FC; /*couleur de l'incone*/
-    width: 35px; /* largeur de la celule*/
-    height: 35px;/* hauteur de la celule*/
-    background-color: #DEEBFF;/*fond couleur celue*/
-    border-radius: 25px; /* l'arrondie de la celule*/
-    margin-left:-37px;
-    
-}
-.bouton2{
-    margin-left: 30px;
-}
-.fa-dog{
+    background-color: #DEEBFF;
+    color: #0065FC;
     text-align: center;
+    height: 28px;
+    width: 28px;
 }
 
-.fa-money-bill-wave{
-    text-align: center;
-}
+
 
 .info{
     display: flex;
@@ -156,7 +124,7 @@ button{
 /*Les couleurs de la charte sont le bleu #0065FC, et sa version plus
  claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.*/
  
-
+/* hebergement marseille*/
 .parti1{
    
     display: flex;
@@ -213,6 +181,7 @@ button{
     border-bottom-right-radius: 1rem;
     
 }
+/* les plus poulaires*/
 
 .titre2{
     font-size: 15px;
@@ -283,23 +252,7 @@ button{
     color:#F2F2F2;
 }
 
-.toto{
-    cursor: pointer;
-    border-radius: 2rem;
-    width:250px;
-    height: 200px;
-    margin: auto;
-
-}
-.toto1{
-    cursor: pointer;
-    border-radius: 2rem;
-    width:250px;
-    height: 400px;
-    margin: auto;
-
-}
-   
+/* Footer*/
 .end{
     background-color: #F2F2F2;
     display: flex;
@@ -330,19 +283,21 @@ button{
     margin-left: 11%;
      
 }
-
+/* activité marseille*/
 .xsize{
     width: 230px;
-    height:340px;
-    border-radius: 2rem;
+    height:310px;
+    border-radius: 11px;
     box-shadow: 4px 5px 11px gray;
     margin-right: 29px;
+    margin-top: 22px;
 }
 .smsize{
     width: 230px;
-    height:170px;
-    border-radius: 2rem;
+    height:150px;
+    border-radius: 11px;
     box-shadow: 4px 5px 11px gray;
+    margin-top: 22px;
   
 }
 
@@ -351,7 +306,7 @@ button{
     width: 500px;
     height: 388px;
     margin: 7px ;
-    border-radius: 2rem;
+    border-radius: 10px;
     display: flex;
  }
  .activite2{
@@ -371,8 +326,8 @@ button{
     color: black;
     width: 100%;
     font-size: 11px;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
  }
  .tutu .blabla3{
     background:white;
@@ -385,8 +340,8 @@ button{
     color:black;
     width: 89%;
     font-size: 11px;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
 
  }
  .titre3{
