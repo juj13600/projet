@@ -22,8 +22,8 @@ body{
 
 
 .navbar{
-    margin-left: 11%;
-    margin-right: 16%;
+    margin-left: 12%;
+    margin-right: 13%;
     color:#0065FC;
     display: flex; /*pour mettre les elements cote a cote*/
     justify-content: space-between;/* placer nos element sur l'axe principal dans ce cas un a gauche l'autre a droite*/
@@ -47,8 +47,11 @@ body{
 }
 
 .box{
-    margin-left: 11%;
+    margin-left: 12%;
 
+}
+a{
+    cursor: pointer;
 }
 
 
@@ -61,6 +64,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    cursor: pointer;
 }
 .icon{
     background-color: #F2F2F2;
@@ -73,6 +77,7 @@ body{
     border: 1px solid #F2F2F2;
 }
 .btn{
+    cursor: pointer;
     background-color:#0065FC;
     border-radius: 0 10px 10px 0;
     padding: 10px;
@@ -82,22 +87,24 @@ body{
 }
 .btn:hover{
     background: #DEEBFF ;
+    color:#0065FC;
  }
 .filtre{
     display: flex;
     margin: 10px;
-    margin-left: 11%;
+    margin-left: 12%;
     align-items: center;
 }
 .bouton1{
-    align-items: center;
+    cursor: pointer;
     border-radius: 2rem;
-    margin: 10px;
+    margin-left: 10px;
     font-size: 18px;
     background: transparent;
     border: 2px solid #F2F2F2;
 }
 .btnf{
+    cursor: pointer;
     background-color: #DEEBFF;
     color: #0065FC;
     text-align: center;
@@ -105,15 +112,20 @@ body{
     border-radius: inherit;
     margin-left: -8px;
 }
+.bouton1:hover{
+    background-color: #DEEBFF;
+    color:#0065FC;
+}
 
-
+/*Les couleurs de la charte sont le bleu #0065FC, et sa version plus
+ claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.*/
 
 .info{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-left:11%;
+    margin-left:12%;
 }
 .inf{
     
@@ -129,14 +141,14 @@ body{
 .parti1{
    
     display: flex;
-    margin-left: 11%;
+    margin-left: 12%;
     
     
 }
 .contenant1{
     width: 730px;
-    height: 575px;
-    margin: 5px ;
+    height: 593px;
+    margin: 4px ;
     flex-direction: row;
     flex-wrap: wrap;
     background: #F2F2F2;
@@ -145,14 +157,14 @@ body{
 }
 .titre1{
     width: inherit;
-    font-size: 15px;
+    font-size: 13px;
     margin-left: 22px;
 }
 .contenant1 .box1{
     position: relative;
     width: 210px;
     height:180px;
-    margin:7px;
+    margin:10px;
     display: inline-block;
     border-radius: 2rem ;
 
@@ -162,7 +174,7 @@ body{
 }
 .contenant1 .box1 .imgbox img{
     width: 100%;
-    border-radius: 2rem;
+    border-radius: 13px;
     border: 5px solid white;
      box-shadow: 4px 5px 11px gray;
 }
@@ -170,32 +182,38 @@ body{
     width: 270px;
     height: 180px;
 }
-
+img{
+    cursor: pointer;
+}
 .contenant1 .box1 .details{
     position: absolute;
-    top: 50%;
+    top: 62%;
     left: 5px;
     bottom: -5px;
     right: -5px;
     background: white;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
     
 }
 /* les plus poulaires*/
 
 .titre2{
-    font-size: 15px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 .contenant1 .box1 .details .blabla{
     position: absolute;
     top: 0%;
     left: 2%;
     color: black;
-    font-size: 10px;
+    font-size: 9px;
 }
 .contenant2{
-    width: 270px;
+    width: 310px;
+    height: 575px;
     margin-left: 10px ;
     display: flex;
     flex-direction: column;
@@ -207,12 +225,10 @@ body{
 .contenant2 .box2{
     position: relative;
     width: 257px;
-    height:130px;
-    background: coral;
+    height:137px;
     margin: 5px;
-    box-sizing: border-box;
-    display: inline-block;
     border-radius: 2rem ;
+    margin-left: 16px;
 
 }
 .contenant2 .box2 .imgbox2{
@@ -220,8 +236,9 @@ body{
 }
 .contenant2 .box2 .imgbox2 img{
     width: 100%;
-    border-radius: 2rem;
-    margin: 2px solid white;
+    height: 126px;
+    border-radius: 12px;
+    border: 5px solid white;
     box-shadow: 4px 5px 11px gray;
 }
 .size2{
@@ -231,12 +248,12 @@ body{
 .contenant2 .box2 .details{
     position: absolute;
     top: 0;
-    left:50%;
-    bottom: 0px;
-    right: 0px;
+    left:54%;
+    bottom: 4px;
+    right: -6px;
     background: white;
-    border-top-right-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
     
 }
 .contenant2 .box2 .details .blabla2{
@@ -244,7 +261,7 @@ body{
     top: 0%;
     left: 5%;
     color: black;
-    font-size: 10px;
+    font-size: 9px;
 }
 .active{
     color: #0065FC;
@@ -276,12 +293,16 @@ body{
 .end .fin{
     text-decoration: none;
     color: black;
+    margin-top: 10px
+}
+.fin:hover{
+    color: #0065FC;
 }
 
 .parti2{
    
     display: flex;
-    margin-left: 11%;
+    margin-left: 12%;
      
 }
 /* activité marseille*/
@@ -309,6 +330,7 @@ body{
     margin: 7px ;
     border-radius: 10px;
     display: flex;
+    padding-left: 15px;
  }
  .activite2{
  
@@ -346,7 +368,7 @@ body{
 
  }
  .titre3{
-     width: inherit;
+     margin-left: 13%;
  }
 
 
