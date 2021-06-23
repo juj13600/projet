@@ -31,7 +31,7 @@ body{
 .navbar ul{
     display: flex;
     align-items: baseline; /* centrer sur l'axe secondaire*/
-    list-style-type: none; /*enleve les poins*/
+    list-style-type: none; /*enleve les points*/
 }
 .navbar ul li a{
     color: black;
@@ -186,6 +186,7 @@ img{
     cursor: pointer;
 }
 .contenant1 .box1 .details{
+    cursor: pointer;
     position: absolute;
     top: 62%;
     left: 5px;
@@ -246,6 +247,7 @@ img{
     height: 130px;
 }
 .contenant2 .box2 .details{
+    cursor: pointer;
     position: absolute;
     top: 0;
     left:54%;
@@ -263,6 +265,7 @@ img{
     color: black;
     font-size: 9px;
 }
+/*  icon etoile */
 .active{
     color: #0065FC;
 }
@@ -299,13 +302,14 @@ img{
     color: #0065FC;
 }
 
+/* activité marseille*/
 .parti2{
    
     display: flex;
     margin-left: 12%;
      
 }
-/* activité marseille*/
+
 .xsize{
     width: 230px;
     height:310px;
@@ -338,6 +342,7 @@ img{
  
  }
  .titi .blabla3{
+     cursor: pointer;
     background: white;
     z-index: 2;
     position: absolute;
@@ -353,6 +358,7 @@ img{
     border-bottom-right-radius: 11px;
  }
  .tutu .blabla3{
+     cursor: pointer;
     background:white;
     position: absolute;
     text-align: left;
@@ -397,3 +403,153 @@ img{
 
 } */
 
+@media screen and (max-width: 780px){
+    body{
+        
+    }
+    .navbar{
+        margin-left: 1%;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar ul li a:hover{
+        border-bottom:1px solid#0065FC;
+        border-top: none;
+    }
+    .box{
+        margin-left: 1px;
+    }
+    .filtre{
+        margin-left: 1%;
+        display: flex;
+        flex-wrap: row;
+
+    }
+    .inf {
+        font-size: 40px;
+        margin-right: 10px;
+    }
+    .info {
+        display: flex;
+        align-items: center;
+        margin-left: 2%;
+        font-size: 17px;
+    }
+    .parti1{
+        margin-left: 1%;
+        display: flex;
+        flex-direction: column;
+    }
+    .contenant1{
+        width: 140%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap; 
+    }
+    .contenant1 .box1 {
+        position: relative;
+        width: 94%;
+        height: 310px;
+        margin: 10px;
+        display: inline-block;
+        border-radius: 2rem;
+    }
+    .contenant1 .box1 .imgbox img {
+        width: 100%;
+        height: 290px;
+    }
+    .contenant1 .box1 .details {
+        top: 62%;
+        left: 4px;
+        bottom: 14px;
+        right: -6px;
+    }
+    .contenant1 .box1 .details .blabla {
+        top: -19%;
+        left: 2%;
+        font-size: 16px;
+    }
+    .titre1 {
+        width: inherit;
+        font-size: 16px;
+    }
+    .titre2{
+        font-size: 16px;
+        justify-content: space-between;
+        margin-left: 19px;
+    }
+    
+    .contenant2{
+            width: 548px;
+            height: auto;
+    }
+    .contenant2 .box2 {
+        width: 92%;
+        height: 310px;
+        margin-left: 2px;
+    }
+    .contenant2 .box2 .imgbox2 img {
+        width: 100%;
+        height: 290px;
+        border-radius: 12px;
+    }
+    .contenant2 .box2 .details {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 60%;
+        bottom: 13px;
+        right: -6px;
+    }
+    .contenant2 .box2 .details .blabla2 {
+        position: absolute;
+        top: 0%;
+        left: 6%;
+        color: black;
+        font-size: 16px;
+    }       
+    .parti2{
+        height: auto;
+        margin-left: 0%;
+        display: flex;
+        flex-direction: column;
+    }
+    .titre3{
+        margin-left: 4%;
+    }
+    .bloc4{
+        width: 511px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .xsize{
+        width: 100%;
+    }
+    .smsize{
+        width: 100%;
+        height: 310px;
+    }
+    .tutu .blabla3{
+        width: 100%;
+        top: 82%;
+        font-size: 14px;
+    }
+    .titi .blabla3{
+        top: 82%;
+        font-size: 14px;
+
+    }
+
+
+    
+    .end{
+        width: 143%;
+        margin-left: 0%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
