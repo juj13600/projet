@@ -87,6 +87,7 @@ a{
     color: white;
     
 }
+
 .btn:hover{
     background: #DEEBFF ;
     color:#0065FC;
@@ -428,7 +429,7 @@ img{
     .filtre{
         margin-left: 1%;
         display: flex;
-        flex-wrap: row;
+        flex-wrap: wrap;
 
     }
     .inf {
