@@ -1,31 +1,28 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
-body{
-    background: image();
-}
+
 
 h1{
-    font-size: 16px;
+    font-size: 25px;
 }
 
 body{
     font-family:'Raleway', sans-serif;
-    max-width: 1440px;
 }
 /*Les couleurs de la charte sont le bleu #0065FC, et sa version plus
  claire #DEEBFF ainsi que le gris pour le fond #F2F2F2.*/
 
 
 .logo{
-    width: 4rem;
+    width: 7rem;
     height: 3rem;
 }
 
 
 .navbar{
-    margin-left: 12%;
-    margin-right: 13%;
+    margin-left: 20%;
+    margin-right: 20%;
     color:#0065FC;
     display: flex; /*pour mettre les elements cote a cote*/
     justify-content: space-between;/* placer nos element sur l'axe principal dans ce cas un a gauche l'autre a droite*/
@@ -49,7 +46,7 @@ body{
 }
 
 .box{
-    margin-left: 12%;
+    margin-left: 20%;
 
 }
 a{
@@ -57,11 +54,13 @@ a{
 }
 
 
+
 .contenant{
     list-style-type: none;
     
     
 }
+
 .recherche{
     display: flex;
     align-items: center;
@@ -92,10 +91,14 @@ a{
     background: #DEEBFF ;
     color:#0065FC;
  }
+ .btnsearch .fas{
+    display: none;
+}
+
 .filtre{
     display: flex;
     margin: 10px;
-    margin-left: 12%;
+    margin-left: 20%;
     align-items: center;
 }
 .bouton1{
@@ -105,19 +108,24 @@ a{
     font-size: 18px;
     background: transparent;
     border: 2px solid #F2F2F2;
-    display: inherit;
-    flex-direction: row;
+    display: flex;
     align-items: center;
 }
-.btnf{
+.aioli{
     cursor: pointer;
+    border-radius: 50%;
     background-color: #DEEBFF;
     color: #0065FC;
-    text-align: center;
-    padding: 10px;
-    border-radius: inherit;
-    margin-left: -8px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin-left: -7px;
+    margin-right: 14px;
 }
+
 .bouton1:hover{
     background-color: #DEEBFF;
     color:#0065FC;
@@ -131,7 +139,7 @@ a{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-left:12%;
+    margin-left:20%;
 }
 .inf{
     
@@ -147,7 +155,7 @@ a{
 .parti1{
    
     display: flex;
-    margin-left: 12%;
+    margin-left: 20%;
     
     
 }
@@ -180,10 +188,45 @@ a{
 }
 .contenant1 .box1 .imgbox img{
     width: 100%;
+    object-fit: cover;
     border-radius: 13px;
     border: 5px solid white;
      box-shadow: 4px 5px 11px gray;
+     /* &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-white, 0.5);
+    
+        &::after {
+          transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0;
+        }
+      }
+      
+    
+      &:active,
+      &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 0.5rem 1rem rgba($color-white, 0.2);
+      } */
 }
+.imgbox:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(color-white, 0.5);
+}
+.imgbox2:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(color-white, 0.5);
+}
+
+/* .contenant1 .box1 .imgbox img:focus{
+    transform: scaleX(1.4) scaleY(1.6);
+          opacity: 0;
+}
+.contenant1 .box1 .imgbox:focus{
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+} */
 .size1{
     width: 270px;
     height: 180px;
@@ -247,6 +290,7 @@ img{
     border-radius: 12px;
     border: 5px solid white;
     box-shadow: 4px 5px 11px gray;
+    object-fit: cover;
 }
 .size2{
     width: 270px;
@@ -312,7 +356,7 @@ img{
 .parti2{
    
     display: flex;
-    margin-left: 12%;
+    margin-left: 20%;
      
 }
 
@@ -323,6 +367,7 @@ img{
     box-shadow: 4px 5px 11px gray;
     margin-right: 29px;
     margin-top: 22px;
+    object-fit: cover;
 }
 .smsize{
     width: 230px;
@@ -330,7 +375,7 @@ img{
     border-radius: 11px;
     box-shadow: 4px 5px 11px gray;
     margin-top: 22px;
-  
+    object-fit: cover;
 }
 
 
@@ -380,7 +425,7 @@ img{
 
  }
  .titre3{
-     margin-left: 13%;
+     margin-left: 20%;
  }
 
 
@@ -431,6 +476,12 @@ img{
         display: flex;
         flex-wrap: wrap;
 
+    }
+    #rch{
+        display: none;
+    }
+    .btnsearch .fas{
+        display: block;
     }
     .inf {
         font-size: 40px;
