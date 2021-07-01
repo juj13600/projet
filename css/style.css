@@ -22,7 +22,7 @@ body{
 
 .navbar{
     margin-left: 20%;
-    margin-right: 20%;
+    margin-right: 25%;
     color:#0065FC;
     display: flex; /*pour mettre les elements cote a cote*/
     justify-content: space-between;/* placer nos element sur l'axe principal dans ce cas un a gauche l'autre a droite*/
@@ -34,7 +34,8 @@ body{
 }
 .navbar ul li a{
     color: black;
-    padding: 12px; /*padding entre les liens*/
+    padding: 12px;
+    margin-left: 20px;
 }
 .navbar ul li a:hover{
     color: blue;
@@ -43,6 +44,7 @@ body{
 #inscrire{
     color: blue;
     position: relative;
+    left: 30px;
 }
 
 .box{
@@ -327,7 +329,9 @@ img{
 .end{
     background-color: #F2F2F2;
     display: flex;
-    justify-content: space-around; 
+    justify-content: space-around;
+    margin-left: 17%;
+    margin-right: 19%;
 }
 .apropos{
     display: flex;
@@ -362,7 +366,7 @@ img{
 
 .xsize{
     width: 230px;
-    height:310px;
+    height:325px;
     border-radius: 11px;
     box-shadow: 4px 5px 11px gray;
     margin-right: 29px;
@@ -380,12 +384,11 @@ img{
 
 
 .bloc4{
-    width: 500px;
+    width: 560px;
     height: 388px;
-    margin: 7px ;
+    margin: 0px ;
     border-radius: 10px;
     display: flex;
-    padding-left: 15px;
  }
  .activite2{
  
@@ -458,11 +461,28 @@ img{
     body{
         
     }
+    .logo{
+        display: block;
+        margin-left: 10%;
+    }
+    #inscrire{
+        position: relative;
+        bottom: 56px;
+        left: -50px;
+    }
     .navbar{
         margin-left: 1%;
         margin-right: auto;
         display: flex;
         flex-direction: column;
+    }
+    .navbar ul{
+        width: 100%;
+    }
+    .navbar ul li{
+        width: 50%;
+        display: flex;
+        justify-content: center;
     }
     .navbar ul li a:hover{
         border-bottom:1px solid#0065FC;
@@ -476,6 +496,9 @@ img{
         display: flex;
         flex-wrap: wrap;
 
+    }
+    .recherche{
+        justify-content: center;
     }
     #rch{
         display: none;
@@ -570,7 +593,7 @@ img{
     }       
     .parti2{
         height: auto;
-        margin-left: 0%;
+        margin-left: 5%;
         display: flex;
         flex-direction: column;
     }
@@ -606,9 +629,15 @@ img{
     
     .end{
         width: 100%;
-        margin-left: 0%;
+        margin-left: 3%;
         display: flex;
         flex-direction: column;
-        text-align: left;
+        
     }
+}
+@media screen and (max-width: px){
+    .body{
+        
+    }
+    
 }
