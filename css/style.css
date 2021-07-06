@@ -547,6 +547,9 @@ img{
         width: 79%;
 
     }
+    .apropos{
+        margin-left: 0%;
+    }
     
 }
 @media screen and (max-width:1340px){
@@ -557,6 +560,7 @@ img{
         width: 100%;
         margin-left: 0%;
     }
+
     
 }
 
@@ -730,10 +734,7 @@ img{
         top: 82%;
         font-size: 14px;
         width: 100%;
-    }
-
-
-    
+    }    
     .end{
         width: 96%;
         margin-left: 3%;
