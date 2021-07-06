@@ -604,6 +604,7 @@ img{
     }
     .navbar ul{
         width: 100%;
+        margin-left: 75px;
     }
     .navbar ul li{
         width: 50%;
@@ -764,4 +765,13 @@ img{
     .apropos{
         margin-left: 0%;
     }
+}
+@media screen and (max-width: 420px){
+    .navbar ul{
+        margin-left: 11px;
+    }
+    #inscrire{
+        left: -17px ;
+    }
+    
 }
