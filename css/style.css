@@ -45,6 +45,7 @@ body{
     color: blue;
     position: relative;
     left: 30px;
+    font-weight: bold;
 }
 
 .box{
@@ -329,18 +330,20 @@ img{
 .end{
     background-color: #F2F2F2;
     display: flex;
-    justify-content: space-around;
+    width: 61%;
     margin-left: 17%;
-    margin-right: 19%;
 }
 .apropos{
     display: flex;
     flex-direction: column;
+    margin-right: 10%;
+    margin-left: 5%;
 
 }
 .nos_hebergements{
     display: flex;
     flex-direction: column;
+    margin-right: 10%;
 
 }
 .Assistance{
@@ -456,6 +459,130 @@ img{
     }
 
 } */
+@media screen and (max-width:1090px){
+    .parti1{
+        margin-left: 1%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .titre2{
+        font-size: 16px;
+        justify-content: space-between;
+        margin-left: 19px;
+        margin-right: 70px;
+    }
+    
+    .contenant2{
+            width: 95%;
+            height: auto;
+    }
+    .contenant2 .box2 {
+        width: 92%;
+        height: 240px;
+        margin-left: 2px;
+    }
+    .contenant2 .box2 .imgbox2 img {
+        width: 100%;
+        height: 210px;
+        border-radius: 12px;
+    }
+    .contenant2 .box2 .details {
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 60%;
+        bottom: 23px;
+        right: -6px;
+    }
+    .contenant2 .box2 .details .blabla2 {
+        position: absolute;
+        top: 0%;
+        left: 6%;
+        color: black;
+        font-size: 14px;
+    }       
+    .parti2{
+        height: auto;
+        margin-left: 5%;
+        display: flex;
+        margin-bottom: 28px;
+    }
+    .parti1{
+        margin-left: 1%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .contenant1{
+        width: 96%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        background: none; 
+    }
+    .contenant1 .box1 {
+        position: relative;
+        width: 92%;
+        height: 310px;
+        margin: 10px;
+        display: inline-block;
+        border-radius: 2rem;
+    }
+    .contenant1 .box1 .imgbox img {
+        width: 100%;
+        height: 290px;
+    }
+    .contenant1 .box1 .details {
+        top: 70%;
+        left: 4px;
+        bottom: 14px;
+        right: -6px;
+        opacity: 0.9;
+    }
+    .contenant1 .box1 .details .blabla {
+        top: -11%;
+        left: 2%;
+        font-size: 11px;
+    }
+    .titre1 {
+        width: inherit;
+        font-size: 16px;
+    }
+    .bloc4{
+        width: 92%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .xsize{
+        width: 79%;
+        height: 230px;
+    }
+    .smsize{
+        width: 79%;
+        height: 230px;
+    }
+    .titi .blabla3{
+        width: 79%;
+        top: 79%;
+    }
+    .tutu .blabla3{
+        top: 79%;
+        width: 79%;
+
+    }
+    
+}
+@media screen and (max-width:1340px){
+  .navbar, .box, .filtre, .info, .parti1, .parti2, .titre3{
+      margin-left: 1%;
+  }
+    .end{
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+}
 
 @media screen and (max-width: 780px){
     body{
@@ -472,7 +599,6 @@ img{
     }
     .navbar{
         margin-left: 1%;
-        margin-right: auto;
         display: flex;
         flex-direction: column;
     }
@@ -542,7 +668,7 @@ img{
         height: 290px;
     }
     .contenant1 .box1 .details {
-        top: 62%;
+        top: 73%;
         left: 4px;
         bottom: 14px;
         right: -6px;
@@ -550,7 +676,7 @@ img{
     .contenant1 .box1 .details .blabla {
         top: -19%;
         left: 2%;
-        font-size: 16px;
+        font-size: 11px;
     }
     .titre1 {
         width: inherit;
@@ -560,6 +686,7 @@ img{
         font-size: 16px;
         justify-content: space-between;
         margin-left: 19px;
+        margin-right: 26px;
     }
     
     .contenant2{
@@ -622,22 +749,19 @@ img{
     .titi .blabla3{
         top: 82%;
         font-size: 14px;
-
+        width: 100%;
     }
 
 
     
     .end{
-        width: 100%;
+        width: 96%;
         margin-left: 3%;
         display: flex;
         flex-direction: column;
         
     }
-}
-@media screen and (max-width: px){
-    .body{
-        
+    .apropos{
+        margin-left: 0%;
     }
-    
 }
