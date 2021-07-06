@@ -330,14 +330,13 @@ img{
 .end{
     background-color: #F2F2F2;
     display: flex;
-    width: 61%;
-    margin-left: 17%;
+    width: 100%;
 }
 .apropos{
     display: flex;
     flex-direction: column;
     margin-right: 10%;
-    margin-left: 5%;
+    margin-left: 20%;
 
 }
 .nos_hebergements{
@@ -588,6 +587,9 @@ img{
     body{
         
     }
+    .title{
+        margin-left: 17px;
+    }
     .logo{
         display: block;
         margin-left: 10%;
@@ -762,8 +764,8 @@ img{
         flex-direction: column;
         
     }
-    .apropos{
-        margin-left: 0%;
+    .apropos, .nos_hebergements, .Assistance{
+        margin-left: 1%;
     }
 }
 @media screen and (max-width: 420px){
@@ -773,5 +775,6 @@ img{
     #inscrire{
         left: -17px ;
     }
+
     
 }
