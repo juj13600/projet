@@ -565,6 +565,9 @@ img{
         width: 100%;
         margin-left: 0%;
     }
+    .apropos{
+        margin-left: 0%;
+    }
 
     
 }
@@ -738,24 +741,27 @@ img{
         width: 100%;
     }    
     .end{
-        width: 96%;
-        margin-left: 3%;
-        display: flex;
-        flex-direction: column;
+        width: 100%;
+        margin-left: 0%;
         
     }
     .apropos, .nos_hebergements, .Assistance{
         margin-left: 1%;
     }
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 557px){
+    .end{
+        width: 96%;
+        margin-left: 3%;
+        display: flex;
+        flex-direction: column;
+        
+    }
     .navbar ul{
         margin-left: 11px;
     }
     #inscrire{
         left: -17px ;
     }
-    .input{
-        width: 74%;
-    }
 }
+
